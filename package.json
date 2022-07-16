@@ -1,0 +1,45 @@
+{
+  "name": "react-firebase-library",
+  "version": "0.0.1",
+  "description": "Hey guys, I build a react-firebase-library to manage people's time. When you create any firebase function you need to write much code. So I decided to build some helper functions to manage our time. It's a fun purpose I build this small library. Hope you guys enjoy it.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/index.js",
+    "index.ts",
+    "utils",
+    "types"
+  ],
+  "scripts": {
+    "build": "tsc index.ts",
+    "pub": "git add . && git commit -m \"update\" && npm version patch && npm run build && npm publish --access=public"
+  },
+  "keywords": [
+    "react-firebase-library, firebase, firebase sort function, razu islam"
+  ],
+  "author": "razu islam",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsdevraju/react-firebase-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jsdevraju/react-firebase-library/issues"
+  },
+  "homepage": "https://github.com/jsdevraju/react-firebase-library#readme",
+  "dependencies": {
+    "firebase": "^9.9.0",
+    "next": "12.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
+    "webpack-cli": "^4.10.0"
+  }
+}
