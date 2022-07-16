@@ -1,15 +1,18 @@
-# firebase-react-library
+# react-firebase-lib
 
 Hey guys,
-I build a firebase-react-library to manage people's time. When you create any firebase function you need to write much code. So I decided to build some helper functions to manage our time. It's a fun purpose I build this small library. Hope you guys enjoy it. 
+I build a react-firebase-lib to manage people's time. When you create any firebase function you need to write much code. So I decided to build some helper functions to manage our time. It's a fun purpose I build this small library. Hope you guys enjoy it. 
 
 ## Installation
 
-Use the package manager [firebase-react-library](https://github.com/jsdevraju/firebase-react-library.git) to install firebase-react-library.
+Use the package manager [react-firebase-lib](https://github.com/jsdevraju/react-firebase-library) to install react-firebase-lib.
 
 ```bash
 npm install firebase
 npm install firebase-react-library
+#or
+yarn add firebase
+yarn add react-firebase-lib
 ```
 
 ## Config your firebase file
@@ -54,18 +57,14 @@ import {
   deleteCollection,
   getCollections,
   getCollection,
-} from "firebase-react-library";
-```
-
-```bash
-npm install firebase-react-library
+} from "react-firebase-lib";
 ```
 
 ## Usage Upload File
 ```javascript
 import { ChangeEvent, FormEvent, useState } from "react";
 import { storage } from "../firebase"; //your firebase config file auth variable
-import { uploadFiles } from "firebase-react-library"; //import uploadFiles function from firebase-react-library
+import { uploadFiles } from "react-firebase-lib"; //import uploadFiles function from react-firebase-lib
 
 export type InputChange = ChangeEvent<HTMLInputElement>;
 
@@ -102,7 +101,7 @@ export default Home;
 ```javascript
 import { FormEvent, useState } from "react";
 import { auth } from "../firebase"; //your firebase config file auth variable
-import { registerApi } from "firebase-react-library"; //import registerApi function from firebase-react-library
+import { registerApi } from "react-firebase-lib"; //import registerApi function from react-firebase-lib
 
 const Home = () => {
 const [email, setEmail] = useState("")
@@ -135,7 +134,7 @@ export default Home;
 ```javascript
 import { FormEvent, useState } from "react";
 import { auth } from "../firebase"; //your firebase config file auth variable
-import { loginApi } from "firebase-react-library"; //import loginApi function from firebase-react-library
+import { loginApi } from "react-firebase-lib"; //import loginApi function from react-firebase-lib
 
 const Home = () => {
 const [email, setEmail] = useState("")
@@ -168,7 +167,7 @@ export default Home;
 ```javascript
 import { FormEvent } from "react";
 import { auth, provierGoogle } from "../firebase"; //your firebase config file auth and provierGoogle variable
-import { googleApi } from "firebase-react-library"; //import googleApi function from firebase-react-library
+import { googleApi } from "react-firebase-lib"; //import googleApi function from react-firebase-lib
 
 const Home = () => {
   const handleSubmit = async (e: FormEvent) =>{
@@ -196,7 +195,7 @@ export default Home;
 ```javascript
 import { FormEvent } from "react";
 import { auth, provierFacebok} from "../firebase"; //your firebase config file auth and provierGoogle variable
-import { facebookApi } from "firebase-react-library"; //import facebookApi function from firebase-react-library
+import { facebookApi } from "react-firebase-lib"; //import facebookApi function from react-firebase-lib
 
 const Home = () => {
   const handleSubmit = async (e: FormEvent) =>{
@@ -224,7 +223,7 @@ export default Home;
 ```javascript
 import { FormEvent, useState } from "react";
 import { auth } from "../firebase"; //your firebase config file auth variable
-import { forgotPassApi } from "firebase-react-library"; //import forgotPassApi function from firebase-react-library
+import { forgotPassApi } from "react-firebase-lib"; //import forgotPassApi function from react-firebase-lib
 
 const Home = () => {
 const [email, setEmail] = useState("")
@@ -253,7 +252,7 @@ export default Home;
 ```javascript
 import { FormEvent } from "react";
 import { auth } from "../firebase"; //your firebase config file auth variable
-import { signOutApi } from "firebase-react-library"; //import signOutApi function from firebase-react-library
+import { signOutApi } from "react-firebase-lib"; //import signOutApi function from react-firebase-lib
 
 const Home = () => {
   const handleLogout = async () =>{
@@ -283,7 +282,7 @@ export default Home;
 ```javascript
 import { FormEvent } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { createCollection } from "firebase-react-library"; //import createCollection function from firebase-react-library
+import { createCollection } from "react-firebase-lib"; //import createCollection function from react-firebase-lib
 
 const Home = () => {
   const handleSubmit = async (e: FormEvent) =>{
@@ -311,7 +310,7 @@ export default Home;
 ```javascript
 import { FormEvent, useEffect } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { getCollections } from "firebase-react-library"; //import getCollections function from firebase-react-library
+import { getCollections } from "react-firebase-lib"; //import getCollections function from react-firebase-lib
 
 const Home = () => {
 
@@ -335,7 +334,7 @@ export default Home;
 ```javascript
 import { FormEvent, useEffect } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { getCollection } from "firebase-react-library"; //import getCollections function from firebase-react-library
+import { getCollection } from "react-firebase-lib"; //import getCollections function from react-firebase-lib
 
 const Home = () => {
 //in next js before you need import useRouter hooks
@@ -363,7 +362,7 @@ export default Home;
 ```javascript
 import { FormEvent, useEffect } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { updateCollection } from "firebase-react-library"; //import updateCollection function from firebase-react-library
+import { updateCollection } from "react-firebase-lib"; //import updateCollection function from react-firebase-lib
 
 const Home = () => {
   const updateData = async () => {
@@ -392,7 +391,7 @@ export default Home;
 ```javascript
 import { FormEvent, useEffect } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { deleteCollection } from "firebase-react-library"; //import deleteCollection function from firebase-react-library
+import { deleteCollection } from "react-firebase-lib"; //import deleteCollection function from react-firebase-lib
 
 const Home = () => {
   const updateData = async () => {
