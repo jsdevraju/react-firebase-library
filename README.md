@@ -9,7 +9,7 @@ Use the package manager [react-firebase-lib](https://github.com/jsdevraju/react-
 
 ```bash
 npm install firebase
-npm install firebase-react-library
+npm install react-firebase-lib
 #or
 yarn add firebase
 yarn add react-firebase-lib
@@ -421,3 +421,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 Copyright (c) 2022 jsdevrazu
+
+About Me:
+[portfolio](https://jsdevrazu.vercel.app)
+[buy me a coffee](https://www.buymeacoffee.com/jsdevrazu)

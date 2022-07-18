@@ -1,6 +1,6 @@
 {
   "name": "react-firebase-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hey guys, I build a react-firebase-library to manage people's time. When you create any firebase function you need to write much code. So I decided to build some helper functions to manage our time. It's a fun purpose I build this small library. Hope you guys enjoy it.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
